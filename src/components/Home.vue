@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import Footer from './footer.vue'
 const audio = new Audio()
 const playing = ref(false)
 const current = ref(null)
@@ -24,12 +25,14 @@ async function toggle(url) {
         playing.value = true
         console.log('playing')
     }else {
+        audio.pause()
         audio.src = `https://weeb-api.vercel.app/ytaudio?query=${url}`
         try {
         await audio.play()
         playing.value = true
         current.value = url
         console.log('start')
+        error.value = ''
         }catch(e) {
         console.log(e)
         error.value = 'An error occured'
@@ -78,4 +81,5 @@ async function toggle(url) {
             </div>
           </div>
       </section>
+      <Footer />
 </template>

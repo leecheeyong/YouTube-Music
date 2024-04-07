@@ -1,7 +1,13 @@
-# Vue 3 + Vite
+# YouTube Video MP3 Streamer
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Concept
+> When a user sends a request, audio format (mp3) of a YouTube video is fetched behind the server using ytdl & ffmpeg, audio file is then served
 
-## Recommended IDE Setup
+## Features
+- YouTube videos search
+- Pause & Play
+- Thumbnails
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+## License
+This project is available as an open source under the terms of the [MIT License](/LICENSE)
+
